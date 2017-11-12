@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	font-family: 'Cabin', sans-serif;
 }
-
+/* estilos header */
 header {
 	background-color: #026AA7;
 	background-image: url(../img/logo.png);
@@ -24,6 +24,7 @@ header {
 	top: 0;
 }
 
+/* estilos "botón" de tablero */
 .board {
 	width: 100px;
 	height: 30px;
@@ -34,6 +35,7 @@ header {
     margin: 0px 5px;
 }
 
+/* estilos "botón" del input */
 .search {
 	width: 180px;
 	height: 30px;
@@ -41,7 +43,7 @@ header {
     padding: 6px;
     border-radius: 4px;
 }
-
+ /* estilos input de búsqueda */
 .search > input {
 	background-color: #67A6CA;
 	border: none;
@@ -49,7 +51,7 @@ header {
 	-webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
-
+/* input se expande al hacerle click*/
 .search > input:focus {
     width: 380px;
 }
@@ -58,6 +60,7 @@ header {
 	color: #FFF;
 }
 
+/* estilo imagen png de fondo en header */
 #logo {
 	padding-top: 3px;
 	margin-left: 25%;
@@ -84,9 +87,18 @@ header {
 	display: inline-flex;
 }
 
-#newList {
-	background-color: #026AA7;
-	border: none;
+#forms {
+	width: 270px;
+	background-color: #E2E4E6;
+	padding: 5px;
+	border-radius: 3px;
+	display: none; /* lo dejo oculto, aparece con un evento */
+}
+
+#newList{
+	background-color: #D6D8DA;
+	border: solid #AAA 1px;
+	border-radius: 3px;
 	outline: none;
 	width: 260px;
 	height: 30px;
@@ -94,10 +106,44 @@ header {
 }
 
 #newList::placeholder {
+	font-family: monospace;
+	color: #AAA;
+	padding: 5px;
+}
+
+#btn {
+	background-color: #5AAC44;
+	padding: 8px 16px;
+	font-weight: 700;
+	color: #FFF;
+	border-radius: 3px;
+	margin: 5px;
+	float: left;
+}
+
+.fa-times {
+	float: left;
+	margin: 14px 7px;
+	color: #737272;
+}
+
+.fa-times:hover {
+	color: #4c4b4b;
+}
+
+#listToHide {
 	background-color: #026AA7;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	width: 260px;
+	height: 30px;
+	padding: 5px;
+}
+
+#listToHide::placeholder {
 	font-family: monospace;
 	color: #FFF;
 	padding: 5px;
-
 }
 
