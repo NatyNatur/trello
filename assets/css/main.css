@@ -68,20 +68,20 @@ header {
 
 #bigContainer {
 	margin-top: 40px;
+	padding-left: 30px;
 	background-color: #0079BF;
 	width: 100%;
 	height: 1000px;
-	text-align: center;
-}
-
-#bigContainer > h1 {
-	padding: 15px;
-	color: #FFF;
-	display: block;
 	text-align: left;
 }
 
-#container {
+#bigContainer > h1 {
+	padding: 10px 0px;
+	color: #FFF;
+	display: block;
+}
+
+#newContainer {
 	text-align: center;
 	width: 95%;
 	display: inline-flex;
@@ -121,8 +121,11 @@ header {
 	float: left;
 }
 
+#btn:hover {
+	background-color: #34911B;
+}
+
 .fa-times {
-	float: left;
 	margin: 14px 7px;
 	color: #737272;
 }
@@ -147,3 +150,28 @@ header {
 	padding: 5px;
 }
 
+#newContainer {
+	width: 270px;
+	background-color: #D6D8DA; 
+	height: auto;
+}
+
+/* nombre de lista*/
+#listName {
+	font-size: 24px;
+	color: #000;
+	font-weight: 700px;
+	text-align: left;
+	padding-left: 20px;
+}
+/*estilos de link a nueva tarea */
+#nextStep {
+	font-size: 15px;
+	color: #6B6A6A;
+}
+
+#newTaskList {
+	font-size: 40px;
+	width: auto;
+	height: auto;
+}
